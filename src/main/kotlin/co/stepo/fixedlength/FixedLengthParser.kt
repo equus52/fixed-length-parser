@@ -1,5 +1,6 @@
 package co.stepo.fixedlength
 
+import java.lang.RuntimeException
 import java.math.BigDecimal
 import java.nio.charset.Charset
 import kotlin.reflect.KClass
@@ -7,7 +8,7 @@ import kotlin.reflect.KFunction
 import kotlin.reflect.KMutableProperty1
 import kotlin.reflect.jvm.javaConstructor
 import kotlin.reflect.jvm.javaSetter
-import kotlin.reflect.memberProperties
+import kotlin.reflect.full.memberProperties
 
 
 @Target(AnnotationTarget.PROPERTY, AnnotationTarget.VALUE_PARAMETER)
